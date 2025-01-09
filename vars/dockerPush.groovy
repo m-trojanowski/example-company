@@ -1,6 +1,6 @@
 def call(List imageList, timeoutMinutes=30) {
   label 'Docker Push'
-  images = []
+  List images = []
   images = imageList
 
   timeout (time: timeoutMinutes, unit: 'MINUTES') {
